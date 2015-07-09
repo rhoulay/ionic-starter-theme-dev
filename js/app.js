@@ -109,6 +109,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.icons', {
+                url: "/icons",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/icons.html"
+                    }
+                }
+            })
         ;
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/app/header');
