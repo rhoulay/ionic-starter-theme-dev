@@ -157,6 +157,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.listIcons', {
+                url: "/list-icons",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/list-icons.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
