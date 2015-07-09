@@ -253,6 +253,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.inputStackedLabels', {
+                url: "/input-stacked-labels",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/input-stacked-labels.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
