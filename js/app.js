@@ -261,6 +261,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.inputFloatingLabels', {
+                url: "/input-floating-labels",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/input-floating-labels.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
