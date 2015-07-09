@@ -269,6 +269,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.insetForm', {
+                url: "/inset-form",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/inset-form.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
