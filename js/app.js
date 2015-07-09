@@ -53,6 +53,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.actionSheet', {
+                url: "/action-sheet",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/action-sheet.html",
+                        controller: "ActionSheetCtrl"
+                    }
+                }
+            })
         ;
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/app/header');
