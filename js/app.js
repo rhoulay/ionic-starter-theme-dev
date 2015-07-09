@@ -237,6 +237,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.inputPlaceholderLabels', {
+                url: "/input-placeholder-labels",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/input-placeholder-labels.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
