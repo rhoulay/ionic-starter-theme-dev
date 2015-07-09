@@ -53,6 +53,231 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.footer', {
+                url: "/footer",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/footer.html"
+                    }
+                }
+            })
+            .state('app.buttons', {
+                url: "/buttons",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/buttons.html"
+                    }
+                }
+            })
+            .state('app.blockButtons', {
+                url: "/block-buttons",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/block-buttons.html"
+                    }
+                }
+            })
+            .state('app.buttonsFullWidth', {
+                url: "/buttons-full-width",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/buttons-full-width.html"
+                    }
+                }
+            })
+            .state('app.buttonsDifferentSizes', {
+                url: "/buttons-different-sizes",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/buttons-different-sizes.html"
+                    }
+                }
+            })
+            .state('app.buttonsOutlined', {
+                url: "/buttons-outlined",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/buttons-outlined.html"
+                    }
+                }
+            })
+            .state('app.buttonsClear', {
+                url: "/buttons-clear",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/buttons-clear.html"
+                    }
+                }
+            })
+            .state('app.buttonsIcons', {
+                url: "/buttons-icons",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/buttons-icons.html"
+                    }
+                }
+            })
+            .state('app.clearButtonsHeaders', {
+                url: "/clear-buttons-headers",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/clear-buttons-headers.html"
+                    }
+                }
+            })
+            .state('app.buttonBar', {
+                url: "/button-bar",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/button-bar.html"
+                    }
+                }
+            })
+            .state('app.buttonsHeaders', {
+                url: "/buttons-headers",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/buttons-headers.html"
+                    }
+                }
+            })
+            .state('app.list', {
+                url: "/list",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/list.html"
+                    }
+                }
+            })
+            .state('app.listDivider', {
+                url: "/list-divider",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/list-divider.html"
+                    }
+                }
+            })
+            .state('app.listIcons', {
+                url: "/list-icons",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/list-icons.html"
+                    }
+                }
+            })
+            .state('app.listButtons', {
+                url: "/list-buttons",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/list-buttons.html"
+                    }
+                }
+            })
+            .state('app.itemAvatars', {
+                url: "/item-avatars",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/item-avatars.html"
+                    }
+                }
+            })
+            .state('app.itemthumbnails', {
+                url: "/item-thumbnails",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/item-thumbnails.html"
+                    }
+                }
+            })
+            .state('app.insetLists', {
+                url: "/inset-lists",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/inset-lists.html"
+                    }
+                }
+            })
+            .state('app.cards', {
+                url: "/cards",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/cards.html"
+                    }
+                }
+            })
+            .state('app.cardHeadersFooters', {
+                url: "/card-headers-footers",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/card-headers-footers.html"
+                    }
+                }
+            })
+            .state('app.cardLists', {
+                url: "/card-lists",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/card-lists.html"
+                    }
+                }
+            })
+            .state('app.cardImages', {
+                url: "/card-images",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/card-images.html"
+                    }
+                }
+            })
+            .state('app.cardShowcase', {
+                url: "/card-showcase",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/card-showcase.html"
+                    }
+                }
+            })
+            .state('app.inputPlaceholderLabels', {
+                url: "/input-placeholder-labels",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/input-placeholder-labels.html"
+                    }
+                }
+            })
+            .state('app.inputInlineLabels', {
+                url: "/input-inline-labels",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/input-inline-labels.html"
+                    }
+                }
+            })
+            .state('app.inputStackedLabels', {
+                url: "/input-stacked-labels",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/input-stacked-labels.html"
+                    }
+                }
+            })
+            .state('app.inputFloatingLabels', {
+                url: "/input-floating-labels",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/input-floating-labels.html"
+                    }
+                }
+            })
+            .state('app.insetForm', {
+                url: "/inset-form",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/inset-form.html"
+                    }
+                }
+            })
+
             .state('app.actionSheet', {
                 url: "/action-sheet",
                 views: {
