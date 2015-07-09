@@ -149,6 +149,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.listDivider', {
+                url: "/list-divider",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/list-divider.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
