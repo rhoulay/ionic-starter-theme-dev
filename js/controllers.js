@@ -22,4 +22,26 @@ angular.module('starter.controllers', [])
                 }
             });
         };
-    });
+    })
+    .controller('AdvanceListCtrl', function($scope){
+        $scope.items = [
+            { title: 'Reggae', img: 'img/ionic.png', description: '"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium' },
+            { title: 'Chill', img: 'img/ionic.png', description: '"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium' },
+            { title: 'Dubstep', img: 'img/ionic.png', description: '"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium' },
+            { title: 'Indie', img: 'img/ionic.png', description: '"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium' },
+            { title: 'Rap', img: 'img/ionic.png', description: '"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium' },
+            { title: 'Cowbell', img: 'img/ionic.png', description: '"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium' }
+        ];
+        $scope.shouldShowDelete = false;
+        $scope.shouldShowReorder = false;
+        $scope.listCanSwipe = true
+        $scope.toggleShouldRecord = function(){
+            $scope.shouldShowDelete = !$scope.shouldShowDelete;
+        }
+        $scope.toggleShouldShowReorder = function(){
+            $scope.shouldShowReorder = !$scope.shouldShowReorder;
+        }
+
+
+    })
+;

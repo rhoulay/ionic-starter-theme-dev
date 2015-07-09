@@ -62,6 +62,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.advanceList', {
+                url: "/advance-list",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/advance-list.html",
+                        controller: "AdvanceListCtrl"
+                    }
+                }
+            })
         ;
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/app/header');
