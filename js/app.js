@@ -205,6 +205,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.cardHeadersFooters', {
+                url: "/card-headers-footers",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/card-headers-footers.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
