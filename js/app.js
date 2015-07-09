@@ -197,6 +197,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.cards', {
+                url: "/cards",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/cards.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
