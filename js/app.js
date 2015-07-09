@@ -245,6 +245,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.inputInlineLabels', {
+                url: "/input-inline-labels",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/input-inline-labels.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
