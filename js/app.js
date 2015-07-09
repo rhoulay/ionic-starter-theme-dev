@@ -69,6 +69,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.blockButtons', {
+                url: "/block-buttons",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/block-buttons.html"
+                    }
+                }
+            })
             .state('app.fullWidth', {
                 url: "/full-width",
                 views: {
