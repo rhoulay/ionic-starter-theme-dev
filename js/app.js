@@ -85,6 +85,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.differentSizes', {
+                url: "/different-sizes",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/different-sizes.html"
+                    }
+                }
+            })
         ;
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/app/header');
