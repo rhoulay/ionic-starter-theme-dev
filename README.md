@@ -1,4 +1,4 @@
-Ionic Starter Theme Dev based on [ionic-starter-sidemenu](https://github.com/driftyco/ionic-starter-sidemenu) and Templates on Ionic webiste [document](http://ionicframework.com/docs/components/)
+Ionic Starter Theme Dev based on [ionic-starter-sidemenu](https://github.com/driftyco/ionic-starter-sidemenu) and templates on Ionic [document](http://ionicframework.com/docs/components/)
 
 ---
 This is an addon starter template for the [Ionic Framework](http://ionicframework.com/).
@@ -15,7 +15,7 @@ Take the name after `ionic-starter-`, and that is the name of the template to be
 
 ```bash
 $ sudo npm install -g ionic cordova
-$ ionic start myApp sidemenu
+$ ionic start myApp theme-dev
 ```
 
 Then, to run it, cd into `myApp` and run:
