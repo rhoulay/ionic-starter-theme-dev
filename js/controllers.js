@@ -34,14 +34,18 @@ angular.module('starter.controllers', [])
         ];
         $scope.shouldShowDelete = false;
         $scope.shouldShowReorder = false;
-        $scope.listCanSwipe = true
-        $scope.toggleShouldRecord = function(){
+        $scope.listCanSwipe = true;
+
+        $scope.toggleShouldDelete = function(){
             $scope.shouldShowDelete = !$scope.shouldShowDelete;
         }
         $scope.toggleShouldShowReorder = function(){
             $scope.shouldShowReorder = !$scope.shouldShowReorder;
         }
 
+
+    })
+    .controller('MyControler', function(){
 
     })
 ;
