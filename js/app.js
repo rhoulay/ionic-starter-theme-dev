@@ -221,6 +221,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.cardImages', {
+                url: "/card-images",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/card-images.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
