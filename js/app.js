@@ -6,8 +6,8 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers'])
 
-    .run(function ($ionicPlatform) {
-        $ionicPlatform.ready(function () {
+    .run(function($ionicPlatform) {
+        $ionicPlatform.ready(function() {
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)
             if (window.cordova && window.cordova.plugins.Keyboard) {
@@ -20,7 +20,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         });
     })
 
-    .config(function ($stateProvider, $urlRouterProvider) {
+    .config(function($stateProvider, $urlRouterProvider) {
         $stateProvider
 
             .state('app', {
@@ -50,94 +50,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 views: {
                     'menuContent': {
                         templateUrl: "templates/content.html"
-                    }
-                }
-            })
-            .state('app.footer', {
-                url: "/footer",
-                views: {
-                    'menuContent': {
-                        templateUrl: "templates/footer.html"
-                    }
-                }
-            })
-            .state('app.buttons', {
-                url: "/buttons",
-                views: {
-                    'menuContent': {
-                        templateUrl: "templates/buttons.html"
-                    }
-                }
-            })
-            .state('app.blockButtons', {
-                url: "/block-buttons",
-                views: {
-                    'menuContent': {
-                        templateUrl: "templates/block-buttons.html"
-                    }
-                }
-            })
-            .state('app.buttonsFullWidth', {
-                url: "/buttons-full-width",
-                views: {
-                    'menuContent': {
-                        templateUrl: "templates/buttons-full-width.html"
-                    }
-                }
-            })
-            .state('app.buttonsDifferentSizes', {
-                url: "/buttons-different-sizes",
-                views: {
-                    'menuContent': {
-                        templateUrl: "templates/buttons-different-sizes.html"
-                    }
-                }
-            })
-            .state('app.buttonsOutlined', {
-                url: "/buttons-outlined",
-                views: {
-                    'menuContent': {
-                        templateUrl: "templates/buttons-outlined.html"
-                    }
-                }
-            })
-            .state('app.buttonsClear', {
-                url: "/buttons-clear",
-                views: {
-                    'menuContent': {
-                        templateUrl: "templates/buttons-clear.html"
-                    }
-                }
-            })
-            .state('app.buttonsIcons', {
-                url: "/buttons-icons",
-                views: {
-                    'menuContent': {
-                        templateUrl: "templates/buttons-icons.html"
-                    }
-                }
-            })
-            .state('app.buttonsHeaders', {
-                url: "/buttons-headers",
-                views: {
-                    'menuContent': {
-                        templateUrl: "templates/buttons-headers.html"
-                    }
-                }
-            })
-            .state('app.clearButtonsHeaders', {
-                url: "/clear-buttons-headers",
-                views: {
-                    'menuContent': {
-                        templateUrl: "templates/clear-buttons-headers.html"
-                    }
-                }
-            })
-            .state('app.buttonBar', {
-                url: "/button-bar",
-                views: {
-                    'menuContent': {
-                        templateUrl: "templates/button-bar.html"
                     }
                 }
             })
