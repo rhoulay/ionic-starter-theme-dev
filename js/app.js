@@ -229,6 +229,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.cardShowcase', {
+                url: "/card-showcase",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/card-showcase.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
