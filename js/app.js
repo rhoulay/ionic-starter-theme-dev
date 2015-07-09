@@ -189,6 +189,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.insetLists', {
+                url: "/inset-lists",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/inset-lists.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
