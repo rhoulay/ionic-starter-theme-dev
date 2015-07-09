@@ -173,6 +173,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.itemAvatars', {
+                url: "/item-avatars",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/item-avatars.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
