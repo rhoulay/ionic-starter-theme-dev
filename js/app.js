@@ -133,6 +133,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.buttonBar', {
+                url: "/button-bar",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/button-bar.html"
+                    }
+                }
+            })
         ;
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/app/header');
