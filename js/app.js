@@ -77,43 +77,43 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
-            .state('app.fullWidth', {
-                url: "/full-width",
+            .state('app.buttonsFullWidth', {
+                url: "/buttons-full-width",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/full-width.html"
+                        templateUrl: "templates/buttons-full-width.html"
                     }
                 }
             })
-            .state('app.differentSizes', {
-                url: "/different-sizes",
+            .state('app.buttonsDifferentSizes', {
+                url: "/buttons-different-sizes",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/different-sizes.html"
+                        templateUrl: "templates/buttons-different-sizes.html"
                     }
                 }
             })
-            .state('app.outlined', {
-                url: "/outlined",
+            .state('app.buttonsOutlined', {
+                url: "/buttons-outlined",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/outlined.html"
+                        templateUrl: "templates/buttons-outlined.html"
                     }
                 }
             })
-            .state('app.clear', {
-                url: "/clear",
+            .state('app.buttonsClear', {
+                url: "/buttons-clear",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/clear.html"
+                        templateUrl: "templates/buttons-clear.html"
                     }
                 }
             })
-            .state('app.icons', {
-                url: "/icons",
+            .state('app.buttonsIcons', {
+                url: "/buttons-icons",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/icons.html"
+                        templateUrl: "templates/buttons-icons.html"
                     }
                 }
             })
