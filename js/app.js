@@ -93,6 +93,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.outlined', {
+                url: "/outlined",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/outlined.html"
+                    }
+                }
+            })
         ;
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/app/header');
