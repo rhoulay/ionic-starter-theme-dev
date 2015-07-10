@@ -381,6 +381,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.evenColumns', {
+                url: "/even-columns",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/even-columns.html"
+                    }
+                }
+            })
+
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
