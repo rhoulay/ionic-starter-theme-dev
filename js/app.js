@@ -365,6 +365,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.tabsLeftIcon', {
+                url: "/tabs-left-icon",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/tabs-left-icon.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
