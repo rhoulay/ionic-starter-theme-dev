@@ -42,8 +42,6 @@ angular.module('starter.controllers', [])
         $scope.toggleShouldShowReorder = function(){
             $scope.shouldShowReorder = !$scope.shouldShowReorder;
         }
-
-
     })
     .controller('MyControler', function(){
 
