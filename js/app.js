@@ -333,6 +333,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.select', {
+                url: "/select",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/select.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
