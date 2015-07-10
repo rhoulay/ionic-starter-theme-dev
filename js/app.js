@@ -389,7 +389,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
-
+            .state('app.explicitColumnSized', {
+                url: "/explicit-column-sized",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/explicit-column-sized.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
