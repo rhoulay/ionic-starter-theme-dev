@@ -325,6 +325,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.range', {
+                url: "/range",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/range.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
