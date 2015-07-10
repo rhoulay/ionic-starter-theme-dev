@@ -413,6 +413,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.responsiveGrid', {
+                url: "/responsive-grid",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/responsive-grid.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
