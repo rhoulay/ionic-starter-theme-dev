@@ -285,6 +285,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.inputIcons', {
+                url: "/input-icons",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/input-icons.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
