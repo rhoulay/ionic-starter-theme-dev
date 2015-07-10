@@ -405,6 +405,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.verticallyAligned', {
+                url: "/vertically-aligned",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/vertically-aligned.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
