@@ -317,6 +317,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.radioButtons', {
+                url: "/radio-buttons",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/radio-buttons.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
