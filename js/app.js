@@ -373,6 +373,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.tabsStripedStyle', {
+                url: "/tabs-striped-style",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/tabs-striped-style.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
