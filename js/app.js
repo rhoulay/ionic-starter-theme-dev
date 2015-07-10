@@ -397,6 +397,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.offsetColumns', {
+                url: "/offset-columns",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/offset-columns.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
