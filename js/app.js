@@ -301,6 +301,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.toggle', {
+                url: "/toggle",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/toggle.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
