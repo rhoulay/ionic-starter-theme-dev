@@ -357,6 +357,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.tabsTopIcon', {
+                url: "/tabs-top-icon",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/tabs-top-icon.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
