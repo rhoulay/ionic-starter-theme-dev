@@ -309,6 +309,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.checkbox', {
+                url: "/checkbox",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/checkbox.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
