@@ -293,6 +293,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.headerInputs', {
+                url: "/header-inputs",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/header-inputs.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
