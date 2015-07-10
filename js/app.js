@@ -349,6 +349,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.tabsIconOnly', {
+                url: "/tabs-icon-only",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/tabs-icon-only.html"
+                    }
+                }
+            })
 
             .state('app.actionSheet', {
                 url: "/action-sheet",
