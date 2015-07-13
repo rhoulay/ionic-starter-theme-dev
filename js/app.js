@@ -466,6 +466,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.popup', {
+                url: "/popup",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/popup.html",
+                        controller: "PopupCtrl"
+                    }
+                }
+            })
         ;
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/app/header');
