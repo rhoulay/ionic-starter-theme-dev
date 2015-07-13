@@ -480,7 +480,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 views: {
                     'menuContent': {
                         templateUrl: "templates/slide-box.html",
-                        controller: "PopupCtrl"
+                    }
+                }
+            })
+            .state('app.spinner', {
+                url: "/spinner",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/spinner.html",
                     }
                 }
             })

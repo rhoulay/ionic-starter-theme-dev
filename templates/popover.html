@@ -1,15 +1,56 @@
 <ion-view view-title="Popover">
-    <ion-content padding="true">
-        <button class="button button-positive" ng-click="openPopover($event)">Open Popover</button>
+    <!--<div class="bar bar-header">-->
+        <!--<div class="buttons">-->
+            <!--<button class="button button-icon ion-more" ng-click="popover.show($event)">-->
+            <!--</button>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <ion-nav-buttons side="right">
+        <button class="button button-icon ion-more" ng-click="popover.show($event)"></button>
+    </ion-nav-buttons>
+
+    <div class="bar bar-subheader">
+        <div class=" button-bar">
+            <button class="button button-light button-android" ng-class="{ 'button\-positive': demo == 'ios' }"
+                    ng-click="setPlatform('ios')">
+                iOS
+            </button>
+            <button class="button button-light button-android" ng-class="{ 'button\-positive': demo == 'android' }"
+                    ng-click="setPlatform('android')">
+                Android
+            </button>
+            <button class="button button-light button-android" ng-class="{ 'button\-positive': demo == 'ionic' }"
+                    ng-click="setPlatform('ionic')">
+                Ionic
+            </button>
+        </div>
+    </div>
+
+    <ion-content padding="true" class="has-subheader">
+        Click the more info icon in the top right. In an actual app the platform style will automatically be set.
     </ion-content>
 
     <script id="my-popover.html" type="text/ng-template">
         <ion-popover-view>
-            <ion-header-bar>
-                <h1 class="title">My Popover Title</h1>
-            </ion-header-bar>
             <ion-content>
-                Hello!
+                <div class="list">
+                    <a class="item" href="http://learn.ionicframework.com/" target="_blank">
+                        Learn Ionic
+                    </a>
+                    <a class="item" href="http://ionicframework.com/docs/" target="_blank">
+                        Documentation
+                    </a>
+                    <a class="item" href="http://showcase.ionicframework.com/" target="_blank">
+                        Showcase
+                    </a>
+                    <a class="item" href="http://ionicframework.com/submit-issue/" target="_blank">
+                        Submit an Issue
+                    </a>
+                    <a class="item" href="https://github.com/driftyco/ionic" target="_blank">
+                        Github Repo
+                    </a>
+                </div>
             </ion-content>
         </ion-popover-view>
     </script>

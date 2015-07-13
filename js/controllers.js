@@ -54,6 +54,7 @@ angular.module('starter.controllers', [])
         }, 2000);
     })
     .controller('ModalCtrl', function ($scope, $ionicModal) {
+
         $ionicModal.fromTemplateUrl('templates/modal.html', {
             scope: $scope,
             animation: 'slide-in-up'
@@ -74,39 +75,19 @@ angular.module('starter.controllers', [])
     })
     .controller('PopoverCtrl', function ($scope, $ionicPopover) {
 
-        // .fromTemplate() method
-        var template = '<ion-popover-view><ion-header-bar> <h1 class="title">My Popover Title</h1> </ion-header-bar> <ion-content> Hello! </ion-content></ion-popover-view>';
-
-        $scope.popover = $ionicPopover.fromTemplate(template, {
-            scope: $scope
-        });
-
-        // .fromTemplateUrl() method
         $ionicPopover.fromTemplateUrl('my-popover.html', {
             scope: $scope
         }).then(function (popover) {
             $scope.popover = popover;
         });
 
-
-        $scope.openPopover = function ($event) {
-            $scope.popover.show($event);
-        };
-        $scope.closePopover = function () {
-            $scope.popover.hide();
-        };
-        //Cleanup the popover when we're done with it!
-        $scope.$on('$destroy', function () {
-            $scope.popover.remove();
-        });
-        // Execute action on hide popover
-        $scope.$on('popover.hidden', function () {
-            // Execute action
-        });
-        // Execute action on remove popover
-        $scope.$on('popover.removed', function () {
-            // Execute action
-        });
+        $scope.demo = 'ios';
+        $scope.setPlatform = function (p) {
+            document.body.classList.remove('platform-ios');
+            document.body.classList.remove('platform-android');
+            document.body.classList.add('platform-' + p);
+            $scope.demo = p;
+        }
     })
 
     .controller('PopupCtrl', function ($scope, $ionicPopup, $timeout) {

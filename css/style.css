@@ -12,6 +12,8 @@
 }
 
 .box {
-    height: 300px;
-    padding-top: 115px;
+    height: 100%;
+}
+.box h1{
+    line-height: 400px;
 }
