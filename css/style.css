@@ -10,3 +10,8 @@
     background: #f7f7f7;
     text-align: center;
 }
+
+.box {
+    height: 300px;
+    padding-top: 115px;
+}

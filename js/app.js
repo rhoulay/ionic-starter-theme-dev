@@ -475,6 +475,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.slideBox', {
+                url: "/slide-box",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/slide-box.html",
+                        controller: "PopupCtrl"
+                    }
+                }
+            })
         ;
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/app/header');
