@@ -43,7 +43,33 @@ angular.module('starter.controllers', [])
             $scope.shouldShowReorder = !$scope.shouldShowReorder;
         }
     })
-    .controller('MyControler', function(){
+    .controller('LoadingCtrl', function($scope, $ionicLoading, $timeout) {
+        $scope.show = function() {
+            $ionicLoading.show({
+                template: 'Loading...'
+            });
+        };
+        $timeout(function(){
+            $ionicLoading.hide();
+        }, 2000);
+    })
+    .controller('ModalCtrl', function($scope, $ionicModal) {
+        $ionicModal.fromTemplateUrl('templates/modal.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.modal = modal;
+        });
+        $scope.openModal = function () {
+            $scope.modal.show();
+        };
+        $scope.closeModal = function () {
+            $scope.modal.hide();
+        };
 
+        $scope.$on('$stateChangeStart', function(){
+            console.log("hi")
+            $scope.modal.hide();
+        });
     })
 ;

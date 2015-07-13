@@ -421,7 +421,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
-
             .state('app.actionSheet', {
                 url: "/action-sheet",
                 views: {
@@ -437,6 +436,24 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     'menuContent': {
                         templateUrl: "templates/advance-list.html",
                         controller: "AdvanceListCtrl"
+                    }
+                }
+            })
+            .state('app.loading', {
+                url: "/loading",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/loading.html",
+                        controller: "LoadingCtrl"
+                    }
+                }
+            })
+            .state('app.modal', {
+                url: "/modal",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/modal-button.html",
+                        controller: "ModalCtrl"
                     }
                 }
             })
